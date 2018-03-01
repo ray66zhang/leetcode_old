@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * Attempted: 1
  *
- * Percentile: 28.95%
+ * Percentile: 28.85%
  *
  */
 public class LongestConsecutiveSequence {
@@ -26,8 +26,8 @@ public class LongestConsecutiveSequence {
 		}
 		int max = 0;
 		Set<Integer> set = new HashSet<>();
-		for (int n : nums) {
-			set.add(n);
+		for (int num : nums) {
+			set.add(num);
 		}
 		for (int i = 0; i < len; i++) {
 			int num = nums[i];
