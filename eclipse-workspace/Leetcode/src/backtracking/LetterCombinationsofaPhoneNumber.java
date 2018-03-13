@@ -1,4 +1,4 @@
-package dfs_bfs;
+package backtracking;
 
 import java.util.ArrayList;
 import java.util.HashMap;
