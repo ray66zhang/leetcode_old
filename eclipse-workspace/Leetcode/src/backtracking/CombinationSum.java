@@ -21,7 +21,7 @@ import java.util.Set;
  *
  * Attempted: 4
  *
- * Percentile: 4.45%
+ * Percentile: 28.29%
  *
  * Figure out correct looping criteria inside the dfs method. Within FOR loop,
  * the recursion should always be based on i instead of index.
@@ -44,7 +44,6 @@ public class CombinationSum {
 			return;
 		} else if (sum == target) {
 			List<Integer> candidate = new ArrayList<>(list);
-			Collections.sort(candidate);
 			res.add(candidate);
 			return;
 		}
