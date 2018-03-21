@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class SRM630Div2P2 {
+public class SRM730Div2P2 {
 
 	public double findExp(int n, int x) {
 		return 0;
@@ -45,7 +45,7 @@ public class SRM630Div2P2 {
 	}
 
 	public static void main(String[] args) {
-		SRM630Div2P2 obj = new SRM630Div2P2();
+		SRM730Div2P2 obj = new SRM730Div2P2();
 		int[] nums = { 1, 2, 3, 4,5 };
 		int x = 3;
 		System.out.println(obj.count(nums, x));
