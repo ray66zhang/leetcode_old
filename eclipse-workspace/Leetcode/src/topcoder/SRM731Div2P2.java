@@ -57,12 +57,7 @@ public class SRM731Div2P2 {
 
 	public static void main(String[] args) {
 		SRM731Div2P2 obj = new SRM731Div2P2();
-		// System.out.println(obj.checkOdds(1, 1));
-		double d = 1;
-		for (int i = 1; i < 497; i++) {
-			d *= i;
-		}
-		System.out.println(d);
+		System.out.println(obj.checkOdds(1, 1));
 	}
 
 }
