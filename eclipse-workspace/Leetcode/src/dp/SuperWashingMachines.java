@@ -43,7 +43,7 @@ package dp;
 public class SuperWashingMachines {
 
 	public int findMinMoves(int[] machines) {
-
+		return 0;
 	}
 
 	public static void main(String[] args) {
