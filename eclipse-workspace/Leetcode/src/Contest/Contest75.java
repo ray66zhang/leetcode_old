@@ -1,4 +1,4 @@
-package string;
+package Contest;
 
 import java.util.ArrayList;
 import java.util.HashMap;
