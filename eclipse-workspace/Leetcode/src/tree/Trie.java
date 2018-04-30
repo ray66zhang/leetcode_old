@@ -88,9 +88,4 @@ public class Trie {
 		return searchDfs(prefix, 0, root, true);
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }
