@@ -1,5 +1,6 @@
 package stack;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Stack;
@@ -28,21 +29,47 @@ import java.util.Stack;
  * 
  * Put iterator inside the stack. All the Collections have .iterator() method.
  */
-interface NestedInteger {
 
-	// @return true if this NestedInteger holds a single integer, rather than a
-	// nested list.
-	public boolean isInteger();
+class NestedInteger {
+	private List<NestedInteger> list;
+	private Integer integer;
 
-	// @return the single integer that this NestedInteger holds, if it holds a
-	// single integer
-	// Return null if this NestedInteger holds a nested list
-	public Integer getInteger();
+	public NestedInteger(List<NestedInteger> list) {
+		this.list = list;
+	}
 
-	// @return the nested list that this NestedInteger holds, if it holds a nested
-	// list
-	// Return null if this NestedInteger holds a single integer
-	public List<NestedInteger> getList();
+	public void add(NestedInteger nestedInteger) {
+		if (this.list != null) {
+			this.list.add(nestedInteger);
+		} else {
+			this.list = new ArrayList<NestedInteger>();
+			this.list.add(nestedInteger);
+		}
+	}
+
+	public void setInteger(int num) {
+		this.integer = num;
+	}
+
+	public NestedInteger(Integer integer) {
+		this.integer = integer;
+	}
+
+	public NestedInteger() {
+		this.list = new ArrayList<NestedInteger>();
+	}
+
+	public boolean isInteger() {
+		return integer != null;
+	}
+
+	public Integer getInteger() {
+		return integer;
+	}
+
+	public List<NestedInteger> getList() {
+		return list;
+	}
 }
 
 public class NestedIterator implements Iterator<Integer> {
